@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!--одиночный тег, обязателен, тип документа-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--одиночный тег, кодировка символов-->
+    <title>HW-1</title>
+    <link>
+</head>
+<body>
+<!--
+Обязательная часть ( 3 балла )
++ Повторите теорию.
++ Пройдите тест https://forms.gle/4H9juwYBSaEUZhD37 +
++ Напишите 5 блочных тегов + 5 семантических тегов + 5 одиночный тегов . Добавьте комментарии, в каких случаях применяются вышеупомянутые Вами теги.
+-->
+<header> <!--блочный тег, семантический тег, шапка страницы-->
+    Header
+    <nav> <!--блочный тег, семантический тег, навигация-->
+        Navigation<br/> <!--одиночный тег, переносит следующую строку-->
+    </nav>
+</header>
+<article> <!--блочный тег, семантический тег, важная информация-->
+    <div> <!--блочный тег, просто оборачивает-->
+        <img src="#" alt="img"> <!--одиночный тег, вставка картинки-->
+        <hr> <!--одиночный тег, разделение текста линией-->
+        <ul> <!--блочный тег, список-->
+            <li>1</li> <!--блочный тег, элемент списка-->
+            <li>2</li> <!--блочный тег, элемент списка-->
+            <li>3</li> <!--блочный тег, элемент списка-->
+            <li>4</li> <!--блочный тег, элемент списка-->
+            <li>5</li> <!--блочный тег, элемент списка-->
+        </ul>
+    </div>
+</article>
+<aside> <!--блочный тег, семантический тег, боковая вторичная информация-->
+    Sidebar
+</aside>
+<footer> <!--блочный тег, семантический тег, "подвал" страницы-->
+    Footer
+</footer>
+<!--Дополнительно ( 4 балла )
+    Создайте блок с идентичным оформлением, используя для визуализации только теги
+-->
+<div>
+    <p>
+        <a href="https://www.google.com/" target="_blank">Белая</a> <b>береза</b><br/>
+        <i>Под моим окном</i><br/>
+        <b><i>Принакрылась снегом,</i></b><br/>
+        <mark>Точно серебром.</mark>
+    </p>
+</div>
+<!--Дополнительно ( 5 баллов )
+Создайте упорядоченный список, в котором первый пункт будет выделен жирным, второй - курсивом, третий - с подчеркиванием, четвертый - ссылка, пятый - красный.  Первые четыре пункта сделать с помощью соответствующих тегов, последний - с помощью атрибута style.
+
+Для ссылки в четвертом пункте примените такие значения , при которых ссылка вела бы на сайт google.com и открывалась в новом окне + имела следующие селекторы: класс  google-link, идентификатор(id)  mainlink.
+
+2.   Создайте форму со следующими полями:
+Общий заголовок “Contact form”
+текст “First Name” + поле для ввода имени
+текст “Last Name” + поле для ввода фамилии
+текст “Password” + поле для ввода пароля
+текст “Email” + поле для ввода почтового адреса
+текст “Country” + віпадающий список для вібора нужной страні проживания
+текст “Do you know html and css?”  + 2 варианта для ответа “YES” и “NO” с возможностью переключения
+кнопка для отправки c текстом “SUBMIT”
+-->
+<div>
+    <h2>1.</h2>
+    <ol>
+        <li><b>first</b></li>
+        <li><i>second</i></li>
+        <li><u>third</u></li>
+        <li><a class="google-link" id="mainlink" href="https://www.google.com/" target="_blank">fourth</a></li>
+        <li style="color: red">fifth</li>
+    </ol>
+</div>
+<div>
+    <h2>2.</h2>
+    <form>
+        <fieldset>
+            <legend>Contact form</legend>
+            <h2>Contact form</h2>
+            <div class="form-row">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name">
+            </div>
+            <div class="form-row">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name">
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-row">
+                <label for="country">Country</label>
+                <select id="country">
+                    <option>Ukraine</option>
+                    <option>Russia</option>
+                    <option>USA</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label>Do you know html and css?</label>
+                <label for="radioy">YES?</label>
+                <input type="radio" name="radio" id="radioy">
+                <label for="radion">NO?</label>
+                <input type="radio" name="radio" id="radion">
+            </div>
+            <div class="btn">
+                <button type="submit">SUBMIT</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
